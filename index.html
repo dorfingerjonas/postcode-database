@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcode Database</title>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/loadig.css">
+    <script src="https://kit.fontawesome.com/e7df220bd7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Postcode database</h1>
+
+    <div id="inputWrapper">
+        <input type="text" id="searchInput" placeholder="search string">
+        <div id="searchButton" class="button"><i class="fas fa-search"></i> search</div>
+        <p id="feedbackText"></p>
+    </div>
+
+    <div class="row header">
+        <p>Staat</p>
+        <p>PLZ</p>
+        <p>Ort</p>
+        <p>Bundesland</p>
+        <p>Bezirk</p>
+        <p>Breitengrad</p>
+        <p>Längengrad</p>
+    </div>
+
+    <div id="tableWrapper">
+    </div>
+
+    <div id="loader" class="hide">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    </div>
+</body>
+</html>
