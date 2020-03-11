@@ -2,6 +2,8 @@
 
 require("dbConfig.php");
 
+set_time_limit(120);
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -9,9 +11,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-// INSERT INTO `geo_names_org` (`country_code`, `postal_code`, `place_name`, `admin_name1`, `admin_code1`, `admin_name2`, `admin_code2`, `admin_name3`, `admin_code3`, `latitude`, `longitude`)
-// VALUES ('na', '0000', 'pc', 'an1', 'ac1', 'an2', 'ac2', 'an3', 'ac3', 'la', 'lo');
 
 // $sql = "INSERT INTO `geo_names_org` (`country_code`, `postal_code`, `place_name`, `admin_name1`, `admin_code1`, `admin_name2`, `admin_code2`, `admin_name3`, `admin_code3`, `latitude`, `longitude`)
 // VALUES (\'na\', \'0000\', \'pc\', \'an1\', \'ac1\', \'an2\', \'ac2\', \'an3\', \'ac3\', \'la\', \'lo\')";
