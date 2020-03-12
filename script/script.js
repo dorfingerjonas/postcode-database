@@ -7,6 +7,12 @@ window.addEventListener('load', () => {
     let startTime;
     let endTime;
 
+    window.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Enter') {
+            searchButton.click();
+        }
+    });
+
     searchButton.addEventListener('click', () => {
         xhttp.open('POST', './php/getData.php', true);
         xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
