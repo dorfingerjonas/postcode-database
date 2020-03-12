@@ -2,8 +2,6 @@
 
 require("dbConfig.php");
 
-set_time_limit(120);
-
 $search = $_POST['search'];
 
 // Create connection
