@@ -16,18 +16,19 @@ h1 {
 
 /* Input */
 #inputWrapper {
-    width: 60%;
-    padding: 0 20%;
-    height: 20vh;
+    width: 30%;
+    padding: 0 35%;
+    height: 10vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 #inputWrapper input {
-    width: 25%;
+    width: 60%;
     border: none;
     border-bottom: 2px lightgray solid;
+    font-size: 1vw;
     outline: none;
     transition: border-color 300ms ease-in-out;
 }
@@ -45,6 +46,12 @@ h1 {
     box-shadow: 1px 1px 9px 0px #dbdbdb;
     cursor: pointer;
     user-select: none;
+}
+
+#feedbackText {
+    position: relative;
+    left: 35%;
+    margin: -1vh 0 8vh 0;
 }
 
 /* Table */
@@ -78,7 +85,6 @@ h1 {
     background: #6495ed;
     color: #fff;
     font-size: 1.5vw;
-    text-align: center;
     top: 0;
     user-select: none;
 }
